@@ -3,7 +3,7 @@
 # Se usa cuando estamos trabajando en local.
 # Permite levantar el server con hot reload.
 # ─────────────────────────────────────────────
-FROM node:19-alpine3.15 AS development
+FROM node:19-alpine3.15 AS dev
 WORKDIR /usr/src/app
 
 COPY package.json ./

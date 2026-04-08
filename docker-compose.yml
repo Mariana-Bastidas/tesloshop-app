@@ -52,8 +52,8 @@ services:
       HOST_API: ${HOST_API}
       JWT_SECRET: ${JWT_SECRET}
     volumes:
-      - ./teslo-shop:/app        # para desarrollo (hot reload)
-      - /app/node_modules        # evita conflictos con node_modules local
+      - ./teslo-shop:/usr/src/app     # para desarrollo (hot reload)
+      - /usr/src/app/node_modules     # evita conflictos con node_modules local
     depends_on:
       db:
         condition: service_healthy   # espera a que la DB esté lista
